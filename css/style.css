@@ -1,8 +1,9 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e6e6e6; /* Un gris más suave */
 }
 
 .sidebar {
@@ -17,7 +18,7 @@ body {
 .sidebar .navbar-brand {
     color: #fff;
     font-size: 1.5rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     display: flex;
     align-items: center;
 }
@@ -38,13 +39,19 @@ body {
 
 .sidebar .nav-link {
     color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
 }
 
 .sidebar .nav-link:hover {
-    background-color: #444;
+    background-color: #555;
+    transform: translateX(5px); /* Un pequeño desplazamiento */
+}
+
+.sidebar .nav-link.active {
+    background-color: #007bff; /* Color azul para el enlace activo */
 }
 
 .content {
